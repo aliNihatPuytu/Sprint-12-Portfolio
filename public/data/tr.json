@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "titleLine1": "Ben bir Frontend",
+    "titleLine2": "Developer'ım...",
+    "subtitle": "...harika kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir frontend ürünleri geliştirmeyi severim.",
+    "githubUrl": "https://github.com/aliNihatPuytu",
+    "linkedinUrl": "https://www.linkedin.com/in/alinihatpuytu",
+    "image": "src/assets/images/profil_image.JPG"
+  },
+  "skills": {
+    "title": "Yetenekler",
+    "items": [
+      { "name": "JAVASCRIPT", "icon": "src/assets/images/Java.png" },
+      { "name": "REACT", "icon": "src/assets/images/React.png" },
+      { "name": "REDUX", "icon": "src/assets/images/Redux.png" },
+      { "name": "NODE", "icon": "src/assets/images/Node.png" },
+      { "name": "VS CODE", "icon": "src/assets/images/VS Code.png" },
+      { "name": "FIGMA", "icon": "src/assets/images/Figma.png" }
+    ]
+  },
+  "nav": { "home": "Anasayfa", "projects": "Projeler", "contact": "İletişim" },
+  "profile": {
+    "title": "Profil",
+    "basicInfo": "Temel Bilgiler",
+    "aboutTitle": "Hakkımda",
+    "aboutText1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam at, odit laborum aliquam voluptatum nisi mollitia.",
+    "aboutText2": "Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+    "rows": [
+      { "label": "Doğum Tarihi", "value": "24.03.1996" },
+      { "label": "İkamet Şehri", "value": "Ankara" },
+      { "label": "Eğitim Durumu", "value": "Hacettepe Üniv. Biyoloji, Lisans 2016" },
+      { "label": "Tercih Ettiği Rol", "value": "Frontend, UI" }
+    ]
+  },
+  "projects": {
+    "title": "Projeler",
+    "items": [
+      {
+        "title": "Portfolyo",
+        "desc": "Kullanıcıların hangi çerezleri kabul edeceğini seçmesini sağlayan basit, özelleştirilebilir bir cookie eklentisi.",
+        "tags": ["react", "redux", "vercel"],
+        "image": "src/assets/images/Portfolio 1.png",
+        "viewSite": "https://vercel.com",
+        "github": "https://github.com"
+      },
+      {
+        "title": "Journey",
+        "desc": "Kullanıcıların hangi çerezleri kabul edeceğini seçmesini sağlayan basit, özelleştirilebilir bir cookie eklentisi.",
+        "tags": ["react", "redux", "vercel"],
+        "image": "https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=1200&auto=format&fit=crop",
+        "viewSite": "https://vercel.com",
+        "github": "https://github.com"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Bana mesaj gönder!",
+    "subtitle": "Bir sorunuz, teklifiniz mi var; veya sadece merhaba mı demek istiyorsunuz? Buyurun.",
+    "email": "alinihatpuytu@gmail.com",
+    "socials": [
+      { "label": "Twitter", "href": "https://twitter.com" },
+      { "label": "Github", "href": "https://github.com/alinahat" },
+      { "label": "Dribbble", "href": "https://dribbble.com" },
+      { "label": "Instagram", "href": "https://instagram.com" }
+    ]
+  }
+}

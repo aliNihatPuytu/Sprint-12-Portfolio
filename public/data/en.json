@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "titleLine1": "I am a Frontend",
+    "titleLine2": "Developer...",
+    "subtitle": "...who likes to craft solid and scalable frontend products with great user experiences.",
+    "githubUrl": "https://github.com/aliNihatPuytu",
+    "linkedinUrl": "https://www.linkedin.com/in/alinihatpuytu",
+    "image": "src/assets/images/profil_image.JPG"
+  },
+  "skills": {
+    "title": "Skills",
+    "items": [
+      { "name": "JAVASCRIPT", "icon": "src/assets/images/Java.png" },
+      { "name": "REACT", "icon": "src/assets/images/React.png" },
+      { "name": "REDUX", "icon": "src/assets/images/Redux.png" },
+      { "name": "NODE", "icon": "src/assets/images/Node.png" },
+      { "name": "VS CODE", "icon": "src/assets/images/VS Code.png" },
+      { "name": "FIGMA", "icon": "src/assets/images/Figma.png" }
+    ]
+  },
+  "nav": { "home": "Home", "projects": "Projects", "contact": "Contact" },
+  "profile": {
+    "title": "Profile",
+    "basicInfo": "Basic Information",
+    "aboutTitle": "About Me",
+    "aboutText1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam at, odit laborum aliquam voluptatum nisi mollitia.",
+    "aboutText2": "Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+    "rows": [
+      { "label": "Date of Birth", "value": "24.03.1996" },
+      { "label": "Location", "value": "Ankara" },
+      { "label": "Education", "value": "Hacettepe Univ. Biology, BSc 2016" },
+      { "label": "Preferred Role", "value": "Frontend, UI" }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "title": "Portfolio",
+        "desc": "A simple, customizable cookie plugin that allows users to select which cookies to accept or decline.",
+        "tags": ["react", "redux", "vercel"],
+        "image": "src/assets/images/Portfolio 1.png",
+        "viewSite": "https://vercel.com",
+        "github": "https://github.com"
+      },
+      {
+        "title": "Journey",
+        "desc": "A simple, customizable cookie plugin that allows users to select which cookies to accept or decline.",
+        "tags": ["react", "redux", "vercel"],
+        "image": "https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=1200&auto=format&fit=crop",
+        "viewSite": "https://vercel.com",
+        "github": "https://github.com"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Send me a message!",
+    "subtitle": "Got a question or proposal, or just want to say hello? Go ahead.",
+    "email": "alinihatpuytu@gmail.com",
+    "socials": [
+      { "label": "Twitter", "href": "https://twitter.com" },
+      { "label": "Github", "href": "https://github.com/alinahat" },
+      { "label": "Dribbble", "href": "https://dribbble.com" },
+      { "label": "Instagram", "href": "https://instagram.com" }
+    ]
+  }
+}
