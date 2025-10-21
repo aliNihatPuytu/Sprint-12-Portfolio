@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- background -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#4731D3"></rect>
+  <!-- left bracket wing -->
+  <path d="M10 20 L18 20 L18 14 L8 14 L8 50 L18 50 L18 44 L10 44Z" fill="#CBF281"></path>
+  <!-- right bracket wing -->
+  <path d="M54 20 L46 20 L46 14 L56 14 L56 50 L46 50 L46 44 L54 44Z" fill="#CBF281"></path>
+  <!-- isometric cube -->
+  <g transform="translate(0,2)">
+    <path d="M32 16 L20 24 L32 32 L44 24Z" fill="#FFFFFF" opacity="0.95"></path>
+    <path d="M20 24 L20 38 L32 46 L32 32Z" fill="#C1BAED" opacity="0.9"></path>
+    <path d="M44 24 L44 38 L32 46 L32 32Z" fill="#8F88FF" opacity="0.9"></path>
+  </g>
+  <!-- tiny spark -->
+  <g transform="translate(32,18)">
+    <circle r="1.8" fill="#CBF281"></circle>
+    <path d="M0 -5 L0 -2 M0 2 L0 5 M-5 0 L-2 0 M2 0 L5 0" stroke="#CBF281" stroke-width="1.4" stroke-linecap="round"></path>
+  </g>
+</svg>

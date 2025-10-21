@@ -14,3 +14,13 @@
 .minh-contact-454 { min-height: 454px; }
 
 .h1-48 { @apply font-bold; font-size: 48px; line-height: 1.1; }
+
+.Toastify__toast--success {
+  border-left: 4px solid #CBF281;
+}
+.Toastify__toast--error {
+  border-left: 4px solid #FF5757;
+}
+.Toastify__toast--pending {
+  border-left: 4px solid #8173DA;
+}

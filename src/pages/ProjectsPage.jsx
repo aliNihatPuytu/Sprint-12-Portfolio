@@ -13,6 +13,7 @@ export default function ProjectsPage() {
   if (isLoading) return <div className="container-outer py-20">Loading...</div>;
   if (error) return <div className="container-outer py-20 text-red-600">Data error</div>;
  
+
   const lightGradient = "linear-gradient(90deg, #4731D3 0 66.666%, #CBF281 66.666%)";
   const darkGradient  = "linear-gradient(90deg, #171043 0 66.666%, #1A210B 66.666%)";
 
@@ -26,7 +27,7 @@ export default function ProjectsPage() {
 
 
       <main 
-        className="flex-grow py-16 md:py-24"
+        className="flex-grow content-center py-16 md:py-24"
         style={{ backgroundImage: theme === "dark" ? darkGradient : lightGradient }}
       >
         <Projects t={data} />

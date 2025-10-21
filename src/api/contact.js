@@ -11,8 +11,8 @@ export default async function handler(req, res) {
     const to = process.env.CONTACT_TO || "alinihatpuytu@gmail.com";
 
     await resend.emails.send({
-      from: "Portfolio <no-reply@your-domain.com>",
-      to,
+      from: "onboarding@resend.dev", 
+      to: "alinihatpuytu@gmail.com",
       subject: `New message from ${name}`,
       reply_to: email,
       html: `

@@ -21,7 +21,7 @@ export default function ProjectCard({ p }) {
 
         <div className="pr-4 pl-0 py-1 h-full flex">
           <div className="w-[584px] h-[360px] flex flex-col justify-center px-6">
-            <h3 className="text-[28px] font-semibold text-[#4731D3] dark:text-[#C1BAED]">
+            <h3 className="text-[28px] font-semibold text-[#4731D3] dark:text-[#8F88FF]">
               {p.title}
             </h3>
 
@@ -40,7 +40,7 @@ export default function ProjectCard({ p }) {
               {(p.tags || []).map((tag, i) => (
                 <span
                   key={i}
-                  className="px-3 py-1 rounded-full text-xs text-white bg-[#4731D3] dark:bg-[#C1BAED] dark:text-white"
+                  className="px-3 py-1 rounded-full text-xs text-white bg-[#4731D3] dark:bg-[#8F88FF] dark:text-white"
                 >
                   {tag}
                 </span>
@@ -64,7 +64,7 @@ export default function ProjectCard({ p }) {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm underline hover:opacity-80 text-[#120B39] dark:text-[#CBF281]"
-a               >
+                >
                   Github
                 </a>
               )}
