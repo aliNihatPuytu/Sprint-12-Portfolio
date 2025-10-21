@@ -2,10 +2,10 @@
   "hero": {
     "titleLine1": "I am a Frontend",
     "titleLine2": "Developer...",
-    "subtitle": "...who likes to craft solid and scalable frontend products with great user experiences.",
+    "subtitle": "I build the bridge from design concepts to the end-user, transforming ambitious ideas into high-performance, scalable, and fluid web experiences.",
     "githubUrl": "https://github.com/aliNihatPuytu",
     "linkedinUrl": "https://www.linkedin.com/in/alinihatpuytu",
-    "image": "src/assets/images/profil_image.JPG"
+    "image": "src/assets/images/profile-image.JPG"
   },
   "skills": {
     "title": "Skills",
@@ -18,38 +18,46 @@
       { "name": "FIGMA", "icon": "src/assets/images/Figma.png" }
     ]
   },
-  "nav": { "home": "Home", "projects": "Projects", "contact": "Contact" },
-  "profile": {
-    "title": "Profile",
-    "basicInfo": "Basic Information",
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+   "profile": {
+    "sectionTitle": "Profile",
+    "basicTitle": "Basic Information",
     "aboutTitle": "About Me",
-    "aboutText1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam at, odit laborum aliquam voluptatum nisi mollitia.",
-    "aboutText2": "Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
-    "rows": [
-      { "label": "Date of Birth", "value": "24.03.1996" },
-      { "label": "Location", "value": "Ankara" },
-      { "label": "Education", "value": "Hacettepe Univ. Biology, BSc 2016" },
-      { "label": "Preferred Role", "value": "Frontend, UI" }
-    ]
+    "labels": {
+      "birthDate": "Birth Date",
+      "city": "City",
+      "education": ["Education", "Status"],
+      "role": ["Preferred", "Role"]
+    },
+    "birthDate": "Apr 13, 2001",
+    "city": "Istanbul",
+    "education": "Maltepe Univ. Interior Architecture BSc, 2024\nMaltepe Univ. Interior Architecture MSc, 2026",
+    "role": "Frontend, UI, UX",
+     "aboutText1": "I am a creative Frontend Developer, bridging the gap between design and robust, scalable code.",
+      "aboutText2": "My background in Interior Architecture, Performance Marketing, and UI/UX (Figma, Adobe) allows me to build data-driven products that drive real growth."
   },
   "projects": {
     "title": "Projects",
     "items": [
       {
         "title": "Portfolio",
-        "desc": "A simple, customizable cookie plugin that allows users to select which cookies to accept or decline.",
-        "tags": ["react", "redux", "vercel"],
-        "image": "src/assets/images/Portfolio 1.png",
+        "desc": "My personal portfolio site, designed in Figma and built with React, Redux, and Tailwind CSS. It showcases a modern, scalable frontend infrastructure featuring React Query, multi-language support, dark/light mode, and Cypress tests.",
+        "tags": ["React", "Redux", "Vercel", "Cypress", "TanStack", "Tailwind"],
+        "image": "src/assets/images/Project 1.png",
         "viewSite": "https://vercel.com",
-        "github": "https://github.com"
+        "github": "https://github.com/aliNihatPuytu/Sprint-12-Portfolio"
       },
       {
-        "title": "Journey",
-        "desc": "A simple, customizable cookie plugin that allows users to select which cookies to accept or decline.",
-        "tags": ["react", "redux", "vercel"],
-        "image": "https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=1200&auto=format&fit=crop",
+        "title": "Technological Pizza Website",
+      "desc": "A multi-page food ordering platform built with React. It simulates a complete e-commerce flow, allowing users to select items from a menu, fill out a dynamic form (including validation), and view their order summary.",
+        "tags": ["React", "CSS", "Vercel", "Cypress"],
+        "image": "src/assets/images/Project 2.png",
         "viewSite": "https://vercel.com",
-        "github": "https://github.com"
+        "github": "https://github.com/aliNihatPuytu/Sprint-8-Challenge-Project"
       }
     ]
   },
@@ -58,10 +66,10 @@
     "subtitle": "Got a question or proposal, or just want to say hello? Go ahead.",
     "email": "alinihatpuytu@gmail.com",
     "socials": [
-      { "label": "Twitter", "href": "https://twitter.com" },
-      { "label": "Github", "href": "https://github.com/alinahat" },
-      { "label": "Dribbble", "href": "https://dribbble.com" },
-      { "label": "Instagram", "href": "https://instagram.com" }
+      { "label": "Twitter", "href": "https://x.com/puytu_" },
+      { "label": "Github", "href": "https://github.com/aliNihatPuytu" },
+      { "label": "Dribbble", "href": "https://dribbble.com/ali-nihat-puytu" },
+      { "label": "Instagram", "href": "https://www.instagram.com/puytu_" }
     ]
   }
 }

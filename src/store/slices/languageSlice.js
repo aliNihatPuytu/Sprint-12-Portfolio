@@ -1,24 +1,19 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
-const initialLang = (() => {
-  const saved = localStorage.getItem('lang')
-  return { current: saved || 'en' }
-})()
+const initialState = { current: "en" }; 
 
 const languageSlice = createSlice({
-  name: 'language',
-  initialState: initialLang,
+  name: "language",
+  initialState,
   reducers: {
-    setLanguage(state, action) {
-      state.current = action.payload
-      localStorage.setItem('lang', state.current)
+    switchLanguage(state) {
+      state.current = state.current === "tr" ? "en" : "tr";
     },
-    toggleLanguage(state) {
-      state.current = state.current === 'en' ? 'tr' : 'en'
-      localStorage.setItem('lang', state.current)
-    }
-  }
-})
+    setLanguage(state, action) {
+      state.current = action.payload; 
+    },
+  },
+});
 
-export const { setLanguage, toggleLanguage } = languageSlice.actions
-export default languageSlice.reducer
+export const { switchLanguage, setLanguage } = languageSlice.actions;
+export default languageSlice.reducer;

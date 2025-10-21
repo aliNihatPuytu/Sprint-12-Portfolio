@@ -1,41 +1,86 @@
-import React from 'react'
+import React from "react";
 
 export default function Profile({ t }) {
-  return (
-    <section className="section">
-      <div className="container-outer grid md:grid-cols-3 gap-10">
-        <div>
-          <h2 className="h1-48 text-brand-lime mb-6">{t.profile.title}</h2>
+  const P = t?.profile ?? {};
+  const L = P.labels ?? {};
 
-          <div className="card bg-brand-purple dark:bg-brand-darkbg text-white">
-            <h3 className="font-semibold mb-4">{t.profile.basicInfo}</h3>
-            <dl className="grid grid-cols-3 gap-y-3 text-sm">
-              {t.profile.rows.map((r, idx) => (
-                <React.Fragment key={idx}>
-                  <dt className="opacity-80">{r.label}</dt>
-                  <dd className="col-span-2">{r.value}</dd>
-                </React.Fragment>
-              ))}
-            </dl>
-          </div>
-        </div>
+  const lines = (label) => (Array.isArray(label) ? label : [label]);
 
-        <div className="place-self-center">
-          <div className="rounded-xl2 overflow-hidden shadow-soft w-[300px] h-[260px]">
-            <img
-              src="https://images.unsplash.com/photo-1529336953121-ad5a0d43d0d2?q=80&w=1200&auto=format&fit=crop"
-              alt="workspace"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
+  const rows = [
+    { label: lines(L.birthDate ?? "Doğum tarihi"), value: P.birthDate },
+    { label: lines(L.city ?? "İkamet Şehri"), value: P.city },
+    {
+      label: lines(L.education ?? ["Eğitim", "Durumu"]),
+      value: P.education,
+    },
+    {
+      label: lines(L.role ?? ["Tercih Ettiği", "Rol"]),
+      value: P.role,
+    },
+  ];
 
-        <div className="card bg-brand-purple dark:bg-brand-darkbg text-white">
-          <h3 className="font-semibold mb-4">{t.profile.aboutTitle}</h3>
-          <p className="text-sm leading-relaxed opacity-90">{t.profile.aboutText1}</p>
-          <p className="text-sm leading-relaxed opacity-90 p-gap">{t.profile.aboutText2}</p>
-        </div>
-      </div>
-    </section>
-  )
+  const sectionTitle = P.sectionTitle ?? "Profile";
+  const basicTitle = P.basicTitle ?? "Basic Information";
+  const aboutTitle = P.aboutTitle ?? "About Me";
+
+  const imgUrl = new URL("../assets/images/profile-section.jpg", import.meta.url).toString();
+
+  return (
+    <section className="w-full">
+      <div className="container-outer">
+        <h2
+          className="font-bold mb-6"
+          style={{ fontSize: 48, lineHeight: 1.1, color: "#CBF281" }}
+        >
+          {sectionTitle}
+        </h2>
+
+        <div
+          className="grid items-start"
+          style={{ gridTemplateColumns: "300px 300px 300px", columnGap: "40px" }}
+        >
+          <div style={{ width: "300px", height: "290.68px" }}>
+            <h3 className="text-white text-2xl font-semibold">{basicTitle}</h3>
+
+            <dl className="mt-6 grid grid-cols-[120px_1fr] gap-y-4 text-sm">
+              {rows.map((r, i) => (
+                <React.Fragment key={i}>
+                  <dt className="text-[#CBF281] font-semibold leading-tight">
+                    {r.label.map((ln, k) => (
+                      <span key={k} className="block">
+                        {ln}
+                      </span>
+                    ))}
+                  </dt>
+                  <dd className="text-white leading-tight whitespace-pre-line">
+                    {r.value}
+                  </dd>
+                </React.Fragment>
+             ))}
+            </dl>
+          </div>
+
+          <div style={{ width: "300px", height: "290.68px" }}>
+            <div className="w-[300px] h-[290.68px] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.35)]">
+              <img
+                src={imgUrl}
+                alt="workspace"
+                className="w-full h-full object-cover"
+          />
+            </div>
+          </div>
+
+          <div style={{ width: "300px", height: "290.68px" }}>
+            <h3 className="text-white text-2xl font-semibold">{aboutTitle}</h3>
+            <p className="mt-4 text-white/90 leading-relaxed text-justify">
+              {P.aboutText1}
+            </p>
+            <p className="mt-4 text-white/90 leading-relaxed text-justify">
+              {P.aboutText2}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

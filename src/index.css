@@ -2,27 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.container-outer {
-  @apply mx-auto px-6;
-  max-width: 960px;
-}
+.container-outer { @apply mx-auto px-6; max-width: 960px; }
 
-.section { @apply py-20; }
+.section-flush { padding-top: 0 !important; padding-bottom: 0 !important; }
 
-.card { @apply bg-white rounded-xl2 shadow-soft p-6; }
-.dark .card { @apply bg-brand-darkpanel text-white; }
 
-.bg-split-light {
-  background: linear-gradient(90deg, theme('colors.brand.purple') 0 66.666%, theme('colors.brand.lime') 66.666%);
-}
-.bg-split-dark {
-  background: linear-gradient(90deg, theme('colors.brand.darkbg') 0 66.666%, theme('colors.brand.darkolive') 66.666%);
-}
+.h-hero-671       { height: 671px; }
+.minh-skills-610  { min-height: 610px; }
+.minh-profile-552 { min-height: 552px; }
+.minh-projects-1039{ min-height: 1039.05px; }
+.minh-contact-454 { min-height: 454px; }
 
 .h1-48 { @apply font-bold; font-size: 48px; line-height: 1.1; }
-
-.p-gap { margin-top: 0.75rem; }
-
-.btn-white {
-  @apply inline-flex items-center justify-center gap-2 w-[120px] h-10 rounded-md bg-white text-gray-800 border border-black/10 shadow-sm hover:opacity-90;
-}

@@ -1,33 +1,50 @@
-import React from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa6'
+import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export default function Hero({ t }) {
-  return (
-    <section className="section">
-      <div className="container-outer grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-        <div>
-          <h1 className="h1-48 !text-brand-lime dark:!text-brand-lime">
-            {t.hero.titleLine1}<br/>{t.hero.titleLine2}
-          </h1>
+  return (
+    <section className="w-full mt-8 md:mt-12 lg:mt-16">
+      <div className="container-outer grid grid-cols-[minmax(0,955px)_350px] gap-10 items-center">
+        <div className="h-[375.89px] flex flex-col justify-center">
+          <h1 className="h1-48" style={{ color: "#CBF281" }}>
+            {t.hero.titleLine1}
+            <br />
+            {t.hero.titleLine2}
+          </h1>
 
-          <p className="mt-6 max-w-md text-sm leading-relaxed opacity-90">{t.hero.subtitle}</p>
+          <p className="mt-6 max-w-md text-[18px] leading-relaxed opacity-90 text-justify">
+            {t.hero.subtitle}
+          </p>
 
-          <div className="mt-6 flex gap-4">
-            <a href={t.hero.githubUrl} target="_blank" className="btn-white" aria-label="Github">
-              <FaGithub /> Github
-            </a>
-            <a href={t.hero.linkedinUrl} target="_blank" className="btn-white" aria-label="LinkedIn">
-              <FaLinkedin /> LinkedIn
-            </a>
-          </div>
-        </div>
+          <div className="mt-6 flex gap-4">
+            <a
+              href={t.hero.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-[120px] h-10 rounded-md bg-white text-[#4731D3] border border-black/10 shadow-sm hover:opacity-90 dark:bg-[#252128] dark:text-white dark:border-white/10"
+            >
+              <FaGithub /> Github
+            </a>
 
-        <div className="justify-self-end">
-          <div className="rounded-xl2 overflow-hidden shadow-soft">
-            <img src={t.hero.image} alt="profile" className="w-[360px] h-[360px] object-cover"/>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
+            <a
+              href={t.hero.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-[120px] h-10 rounded-md bg-white text-[#4731D3] border border-black/10 shadow-sm hover:opacity-90 dark:bg-[#252128] dark:text-white dark:border-white/10"
+            >
+              <FaLinkedin /> LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div className="justify-self-end rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.35)] w-[350px] h-[375.89px]">
+          <img
+            src={t.hero.image}
+            alt="profile"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+  );
 }

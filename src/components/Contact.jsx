@@ -1,37 +1,62 @@
-import React from 'react'
-import { FaTwitter, FaGithub, FaDribbble, FaInstagram } from 'react-icons/fa6'
+import React from "react";
+import { FaTwitter, FaGithub, FaDribbble, FaInstagram } from "react-icons/fa";
 
-export default function Contact({ t }) {
-  const icons = {
-    twitter: FaTwitter,
-    github: FaGithub,
-    dribbble: FaDribbble,
-    instagram: FaInstagram,
-  }
-
+export default function Contact() {
   return (
-    <section className="section">
-      <div className="container-outer text-center">
-        <h2 className="h1-48 text-brand-purple dark:text-white mb-6">{t.contact.title}</h2>
-        <p className="max-w-xl mx-auto opacity-90">{t.contact.subtitle}</p>
+    <section className="w-full">
+      <div className="container-outer">
+        <div className="mx-auto w-[483px] h-[290px] flex flex-col justify-between items-center text-center">
+          <h2 className="font-bold text-[42px] leading-[1.1] text-[#4731D3] dark:text-[#8F88FF]">
+            Send me a message!
+          </h2>
 
-        <a href={`mailto:${t.contact.email}`} className="inline-block mt-6 underline text-brand-purple">
-          {t.contact.email}
-        </a>
+          <p className="text-[18px] opacity-80">
+            Got a question or proposal, or just want <br /> to say hello? Go ahead.
+          </p>
 
-        <div className="mt-6 flex items-center justify-center gap-6 text-2xl text-brand-purple">
-          {t.contact.socials.map((s, i) => {
-            const key = s.label.toLowerCase()
-            const Icon = icons[key] || null
-            return (
-              <a key={i} href={s.href} target="_blank" aria-label={s.label}
-                 className="hover:opacity-80 transition-opacity">
-                {Icon ? <Icon /> : s.label}
-              </a>
-            )
-          })}
+          <a
+            href="mailto:alinihatpuytu@gmail.com"
+            className="underline font-medium hover:opacity-80 text-[#4731D3] dark:text-[#8F88FF]"
+          >
+            alinihatpuytu@gmail.com
+          </a>
+
+          <div className="flex gap-6">
+            <a
+              href="#"
+              aria-label="Twitter"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 text-[#4731D3] dark:text-[#8F88FF]"
+            >
+              <FaTwitter size={20} />
+            </a>
+            <a
+              href="#"
+              aria-label="Github"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 text-[#4731D3] dark:text-[#8F88FF]"
+            >
+              <FaGithub size={20} />
+            </a>
+            <a
+              href="#"
+              aria-label="Dribbble"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 text-[#4731D3] dark:text-[#8F88FF]"
+            >
+              <FaDribbble size={20} />
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 text-[#4731D3] dark:text-[#8F88FF]"
+            >
+              <FaInstagram size={20} />
+            </a>
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -2,10 +2,10 @@
   "hero": {
     "titleLine1": "Ben bir Frontend",
     "titleLine2": "Developer'ım...",
-    "subtitle": "...harika kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir frontend ürünleri geliştirmeyi severim.",
+    "subtitle": "Tasarım konseptlerinden son kullanıcıya giden köprüyü inşa ediyor, iddialı fikirleri yüksek performanslı, ölçeklenebilir ve akıcı web deneyimlerine dönüştürüyorum.",
     "githubUrl": "https://github.com/aliNihatPuytu",
     "linkedinUrl": "https://www.linkedin.com/in/alinihatpuytu",
-    "image": "src/assets/images/profil_image.JPG"
+    "image": "src/assets/images/profile-image.JPG"
   },
   "skills": {
     "title": "Yetenekler",
@@ -20,36 +20,40 @@
   },
   "nav": { "home": "Anasayfa", "projects": "Projeler", "contact": "İletişim" },
   "profile": {
-    "title": "Profil",
-    "basicInfo": "Temel Bilgiler",
+    "sectionTitle": "Profil",
+    "basicTitle": "Temel Bilgiler",
     "aboutTitle": "Hakkımda",
-    "aboutText1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam at, odit laborum aliquam voluptatum nisi mollitia.",
-    "aboutText2": "Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
-    "rows": [
-      { "label": "Doğum Tarihi", "value": "24.03.1996" },
-      { "label": "İkamet Şehri", "value": "Ankara" },
-      { "label": "Eğitim Durumu", "value": "Hacettepe Üniv. Biyoloji, Lisans 2016" },
-      { "label": "Tercih Ettiği Rol", "value": "Frontend, UI" }
-    ]
+    "labels": {
+      "birthDate": "Doğum tarihi",
+      "city": "İkamet Şehri",
+      "education": ["Eğitim", "Durumu"],
+      "role": ["Tercih Ettiği", "Rol"]
+    },
+    "birthDate": "13.04.2001",
+    "city": "İstanbul",
+    "education": "Maltepe Ünv. İç Mimarlık Lisans, 2024\nMaltepe Ünv. İç Mimarlık Yüksek Lisans, 2026",
+    "role": "Frontend, UI, UX",
+   "aboutText1": "Tasarım ile sağlam, ölçeklenebilir kodu birleştiren yaratıcı bir Frontend Geliştiricisiyim.",
+    "aboutText2": "İç Mimarlık, Performans Pazarlama ve UI/UX (Figma, Adobe) geçmişim, gerçek büyümeyi sağlayan veriye dayalı ürünler geliştirmeme olanak tanıyor."
   },
   "projects": {
     "title": "Projeler",
     "items": [
       {
         "title": "Portfolyo",
-        "desc": "Kullanıcıların hangi çerezleri kabul edeceğini seçmesini sağlayan basit, özelleştirilebilir bir cookie eklentisi.",
-        "tags": ["react", "redux", "vercel"],
-        "image": "src/assets/images/Portfolio 1.png",
+       "desc": "Figma'da tasarlayıp React, Redux ve Tailwind CSS ile hayata geçirdiğim kişisel portfolyo sitem. Proje; React Query, çoklu dil desteği, karanlık/aydınlık mod ve Cypress testlerini içeren modern ve ölçeklenebilir bir frontend altyapısını sergilemektedir.",
+        "tags": ["React", "Redux", "Vercel", "Cypress", "TanStack", "Tailwind"],
+        "image": "src/assets/images/Project 1.png",
         "viewSite": "https://vercel.com",
-        "github": "https://github.com"
+        "github": "https://github.com/aliNihatPuytu/Sprint-12-Portfolio"
       },
       {
-        "title": "Journey",
-        "desc": "Kullanıcıların hangi çerezleri kabul edeceğini seçmesini sağlayan basit, özelleştirilebilir bir cookie eklentisi.",
-        "tags": ["react", "redux", "vercel"],
-        "image": "https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=1200&auto=format&fit=crop",
+        "title": "Teknolojik Pizza İnternet Sitesi",
+       "desc": "React ile geliştirilmiş, çok sayfalı bir yemek sipariş platformu. Kullanıcıların menüden ürün seçtiği, dinamik bir formu (validation dahil) doldurduğu ve sipariş özetini gördüğü tam bir e-ticaret akışını simüle etmektedir.",
+        "tags": ["React", "CSS", "Vercel", "Cypress"],
+        "image": "src/assets/images/Project 2.png",
         "viewSite": "https://vercel.com",
-        "github": "https://github.com"
+        "github": "https://github.com/aliNihatPuytu/Sprint-8-Challenge-Project"
       }
     ]
   },
@@ -58,10 +62,10 @@
     "subtitle": "Bir sorunuz, teklifiniz mi var; veya sadece merhaba mı demek istiyorsunuz? Buyurun.",
     "email": "alinihatpuytu@gmail.com",
     "socials": [
-      { "label": "Twitter", "href": "https://twitter.com" },
-      { "label": "Github", "href": "https://github.com/alinahat" },
-      { "label": "Dribbble", "href": "https://dribbble.com" },
-      { "label": "Instagram", "href": "https://instagram.com" }
+      { "label": "Twitter", "href": "https://x.com/puytu_" },
+      { "label": "Github", "href": "https://github.com/aliNihatPuytu" },
+      { "label": "Dribbble", "href": "https://dribbble.com/ali-nihat-puytu" },
+      { "label": "Instagram", "href": "https://www.instagram.com/puytu_" }
     ]
   }
 }
