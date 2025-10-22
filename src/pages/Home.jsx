@@ -20,7 +20,7 @@ export default function Home() {
   const dark  = "linear-gradient(90deg,#171043 0 66.666%,#1A210B 66.666%)";
 
   return (
-    <div className="bg-white text-gray-900 dark:bg-[#0F1020] dark:text-white">
+    <div className="bg-white text-gray-900 dark:bg-[#0F1020] dark:text-white overflow-x-hidden">
       <div className="section-flush section-pad h-hero-671 text-white" style={{ backgroundImage: theme === "dark" ? dark : light }}>
         <Navbar />
         <div className="h-full flex items-start">

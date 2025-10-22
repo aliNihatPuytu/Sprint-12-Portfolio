@@ -25,9 +25,9 @@ export default function Navbar() {
 
         <div className="justify-self-center">
           <ul className="flex items-center gap-4 sm:gap-6 flex-wrap justify-center">
-            <li><NavLink to="/"         className={`${linkBase} ${navLinkColor}`}>Home</NavLink></li>
-            <li><NavLink to="/projects" className={`${linkBase} ${navLinkColor}`}>Projects</NavLink></li>
-            <li><NavLink to="/contact"  className={`${linkBase} ${navLinkColor}`}>Contact</NavLink></li>
+            <li><NavLink to="/"         className={`${linkBase} ${navLinkColor} shadow-contrast`}>Home</NavLink></li>
+            <li><NavLink to="/projects" className={`${linkBase} ${navLinkColor} shadow-contrast`}>Projects</NavLink></li>
+            <li><NavLink to="/contact"  className={`${linkBase} ${navLinkColor} shadow-contrast`}>Contact</NavLink></li>
           </ul>
         </div>
 

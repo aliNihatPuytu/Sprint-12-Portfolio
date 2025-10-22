@@ -8,6 +8,9 @@ export default {
         display: ['"Space Grotesk"', 'Inter', 'system-ui', 'sans-serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
+      screens: {
+        desk: '960px',
+      },
       colors: {
         brand: {
           purple: '#4731d3',
@@ -15,10 +18,10 @@ export default {
           darkbg: '#171043',
           darkpanel: '#252128',
           darkolive: '#1a210b',
-        }
+        },
       },
       boxShadow: { soft: '0 10px 25px rgba(0,0,0,0.15)' },
-      borderRadius: { xl2: '1.25rem' }
+      borderRadius: { xl2: '1.25rem' },
     },
   },
   plugins: [],
