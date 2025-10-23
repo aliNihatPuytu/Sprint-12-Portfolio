@@ -44,7 +44,7 @@
        "desc": "Figma'da tasarlayıp React, Redux ve Tailwind CSS ile hayata geçirdiğim kişisel portfolyo sitem. Proje; React Query, çoklu dil desteği, karanlık/aydınlık mod ve Cypress testlerini içeren modern ve ölçeklenebilir bir frontend altyapısını sergilemektedir.",
         "tags": ["React", "Redux", "Vercel", "Cypress", "TanStack", "Tailwind"],
         "image": "src/assets/images/Project 1.png",
-        "viewSite": "https://vercel.com",
+        "viewSite": "https://alinihatportfolio.vercel.app",
         "github": "https://github.com/aliNihatPuytu/Sprint-12-Portfolio"
       },
       {

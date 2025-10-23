@@ -48,7 +48,7 @@
         "desc": "My personal portfolio site, designed in Figma and built with React, Redux, and Tailwind CSS. It showcases a modern, scalable frontend infrastructure featuring React Query, multi-language support, dark/light mode, and Cypress tests.",
         "tags": ["React", "Redux", "Vercel", "Cypress", "TanStack", "Tailwind"],
         "image": "src/assets/images/Project 1.png",
-        "viewSite": "https://vercel.com",
+        "viewSite": "https://alinihatportfolio.vercel.app",
         "github": "https://github.com/aliNihatPuytu/Sprint-12-Portfolio"
       },
       {
