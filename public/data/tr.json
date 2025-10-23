@@ -52,7 +52,7 @@
        "desc": "React ile geliştirilmiş, çok sayfalı bir yemek sipariş platformu. Kullanıcıların menüden ürün seçtiği, dinamik bir formu (validation dahil) doldurduğu ve sipariş özetini gördüğü tam bir e-ticaret akışını simüle etmektedir.",
         "tags": ["React", "CSS", "Vercel", "Cypress"],
         "image": "src/assets/images/Project 2.png",
-        "viewSite": "https://vercel.com",
+        "viewSite": "https://teknolojikpizza.vercel.app",
         "github": "https://github.com/aliNihatPuytu/Sprint-8-Challenge-Project"
       }
     ]

@@ -24,7 +24,7 @@ export default function ContactPage() {
   if (error) return <div className="container-outer py-20 text-red-600">Data error</div>;
 
   const t = data.contact;
-  const contactColor = "text-[#CBF281] dark:text-[#CBF281]"; 
+  const contactColor = "text-[#CBF281] dark:text-[#CBF281]";
   const dividerText = lang === "tr" ? "Veya Diğer Platformlardan Ulaşın" : "Or Connect Via";
 
   return (
@@ -51,7 +51,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="bg-white dark:bg-[#1E1E1E] p-8 md:p-12 rounded-2xl shadow-2xl mt-12">
+          <div className="mt-12">
             <ContactForm />
           </div>
 
