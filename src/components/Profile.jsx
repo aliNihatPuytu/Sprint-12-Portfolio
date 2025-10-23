@@ -16,7 +16,7 @@ export default function Profile({ t }) {
   const basicTitle   = P.basicTitle   ?? "Temel Bilgiler";
   const aboutTitle   = P.aboutTitle   ?? "Hakkımda";
 
-  const imgUrl = new URL("../assets/images/profile-section.jpg", import.meta.url).toString();
+  const imgUrl = new URL("/images/profile-section.jpg", import.meta.url).toString();
 
   return (
     <section className="w-full">

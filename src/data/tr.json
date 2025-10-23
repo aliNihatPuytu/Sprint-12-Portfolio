@@ -5,17 +5,17 @@
     "subtitle": "Tasarım konseptlerinden son kullanıcıya giden köprüyü inşa ediyor, iddialı fikirleri yüksek performanslı, ölçeklenebilir ve akıcı web deneyimlerine dönüştürüyorum.",
     "githubUrl": "https://github.com/aliNihatPuytu",
     "linkedinUrl": "https://www.linkedin.com/in/alinihatpuytu",
-    "image": "src/assets/images/profile-image.JPG"
+    "image": "/images/profile-image.JPG"
   },
   "skills": {
     "title": "Yetenekler",
     "items": [
-      { "name": "JAVASCRIPT", "icon": "src/assets/images/Java.png" },
-      { "name": "REACT", "icon": "src/assets/images/React.png" },
-      { "name": "REDUX", "icon": "src/assets/images/Redux.png" },
-      { "name": "NODE", "icon": "src/assets/images/Node.png" },
-      { "name": "VS CODE", "icon": "src/assets/images/VS Code.png" },
-      { "name": "FIGMA", "icon": "src/assets/images/Figma.png" }
+      { "name": "JAVASCRIPT", "icon": "/images/skills/java.png" },
+      { "name": "REACT", "icon": "/images/skills/react.png" },
+      { "name": "REDUX", "icon": "/images/skills/redux.png" },
+      { "name": "NODE", "icon": "/images/skills/node.png" },
+      { "name": "VS CODE", "icon": "/images/skills/vs-code.png" },
+      { "name": "FIGMA", "icon": "/images/skills/figma.png" }
     ]
   },
   "nav": { "home": "Anasayfa", "projects": "Projeler", "contact": "İletişim" },
@@ -43,7 +43,7 @@
         "title": "Portfolyo",
        "desc": "Figma'da tasarlayıp React, Redux ve Tailwind CSS ile hayata geçirdiğim kişisel portfolyo sitem. Proje; React Query, çoklu dil desteği, karanlık/aydınlık mod ve Cypress testlerini içeren modern ve ölçeklenebilir bir frontend altyapısını sergilemektedir.",
         "tags": ["React", "Redux", "Vercel", "Cypress", "TanStack", "Tailwind"],
-        "image": "src/assets/images/Project 1.png",
+        "image": "/images/projects/project-1.png",
         "viewSite": "https://alinihatportfolio.vercel.app",
         "github": "https://github.com/aliNihatPuytu/Sprint-12-Portfolio"
       },
@@ -51,7 +51,7 @@
         "title": "Teknolojik Pizza İnternet Sitesi",
        "desc": "React ile geliştirilmiş, çok sayfalı bir yemek sipariş platformu. Kullanıcıların menüden ürün seçtiği, dinamik bir formu (validation dahil) doldurduğu ve sipariş özetini gördüğü tam bir e-ticaret akışını simüle etmektedir.",
         "tags": ["React", "CSS", "Vercel", "Cypress"],
-        "image": "src/assets/images/Project 2.png",
+        "image": "/images/projects/project-2.png",
         "viewSite": "https://teknolojikpizza.vercel.app",
         "github": "https://github.com/aliNihatPuytu/Sprint-8-Challenge-Project"
       }
